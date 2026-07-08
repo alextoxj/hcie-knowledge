@@ -1,28 +1,51 @@
 import { defineConfig } from 'vitepress'
 
-// https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "HCIE Knowledge Base",
-  description: "From HCIP to HCIE · Learn the Reason Behind Networking",
-  themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
-    nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
-    ],
+  base: '/hcie-knowledge/',
+  title: 'Network Knowledge Base',
+  description: 'From HCIP to AI Networking',
 
-    sidebar: [
+  lang: 'zh-CN',
+
+  lastUpdated: true,
+
+  themeConfig: {
+
+    logo: '/logo.svg',
+
+    nav: [
+      { text: '首页', link: '/' },
+      { text: '学习路线', link: '/learning-path' },
+
       {
-        text: 'Examples',
+        text: '知识体系',
         items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
+          { text: '网络基础', link: '/foundation/' },
+          { text: '交换网络', link: '/switching/' },
+          { text: '路由协议', link: '/routing/' },
+          { text: 'MPLS', link: '/mpls/' },
+          { text: 'Segment Routing', link: '/segment-routing/' },
+          { text: '数据中心', link: '/datacenter/' },
+          { text: '云原生网络', link: '/cloud-native/' },
+          { text: '网络自动化', link: '/network-automation/' },
+          { text: 'AI Networking', link: '/ai-network/' }
         ]
+      },
+
+      { text: '实验', link: '/labs/' },
+      { text: '面试', link: '/interview/' },
+
+      {
+        text: 'GitHub',
+        link: 'https://github.com/alextoxj/hcie-knowledge'
       }
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      {
+        icon: 'github',
+        link: 'https://github.com/alextoxj/hcie-knowledge'
+      }
     ]
   }
 })
