@@ -6,7 +6,7 @@ hero:
   text: "From HCIP to AI Networking"
   tagline: "理解网络，而不是背网络。"
   image:
-    src: /logo.svg
+    src: /logo.png
     alt: Network Knowledge Base
 
   actions:
