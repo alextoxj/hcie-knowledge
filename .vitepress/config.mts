@@ -11,7 +11,7 @@ export default defineConfig({
 
   themeConfig: {
 
-    logo: '/logo.svg',
+    logo: '/logo.png',
 
     nav: [
       { text: '首页', link: '/' },
