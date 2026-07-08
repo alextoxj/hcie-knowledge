@@ -1,0 +1,28 @@
+{
+  "name": "hcie-knowledge",
+  "version": "1.0.0",
+  "description": "Interactive HCIP → HCIE Knowledge Base",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alextoxj/hcie-knowledge.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/alextoxj/hcie-knowledge/issues"
+  },
+  "homepage": "https://github.com/alextoxj/hcie-knowledge#readme",
+  "devDependencies": {
+    "vitepress": "^1.6.4",
+    "vue": "^3.5.39"
+  }
+}
